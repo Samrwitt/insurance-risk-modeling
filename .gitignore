@@ -10,8 +10,9 @@ venv/
 
 # DVC and data
 *.dvc
+data/*
+!data/*.dvc
 .dvc/
-data/
 plots/
 
 # Jupyter
