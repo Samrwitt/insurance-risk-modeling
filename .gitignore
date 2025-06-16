@@ -9,10 +9,10 @@ __pycache__/
 venv/
 
 # DVC and data
-*.dvc
+! .dvc
 data/*
 !data/*.dvc
-.dvc/
+.dvc/cache
 
 
 # Jupyter
@@ -20,3 +20,4 @@ data/*
 
 # OS files
 .DS_Store
+/metrics.json
