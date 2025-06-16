@@ -6,3 +6,4 @@ scipy
 plotly
 scikit-learn
 jupyter
+dvc
