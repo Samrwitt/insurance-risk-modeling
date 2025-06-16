@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  train_model:
+    cmd: python src/train_model.py
+    deps:
+    - path: data/MachineLearningRating_v3.txt
+      hash: md5
+      md5: f6b7009b68ae21372b7deca9307fbb23
+      size: 529363713
+    - path: src/train_model.py
+      hash: md5
+      md5: 6dd76cf7dfd3057be3a48f30e58654e2
+      size: 1178
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: b5c31b5c90cbbfa9210e203c0cdd6ccb
+      size: 60
+    - path: models/linear_model.pkl
+      hash: md5
+      md5: bf42a78bcbffc1f970b9121744ebb9a2
+      size: 543
