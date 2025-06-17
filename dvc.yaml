@@ -1,0 +1,11 @@
+stages:
+  train_model:
+    cmd: python src/train_model.py
+    deps:
+      - src/train_model.py
+      - data/MachineLearningRating_v3.txt
+    outs:
+      - models/linear_model.pkl
+    metrics:
+      - metrics.json
+
